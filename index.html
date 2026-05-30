@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Store - Fresh Threads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER (Top of page) -->
+    <header>
+        <div class="container">
+            <h1>🛒 Fresh Threads T-Shirt Store</h1>
+            <p>Premium T-Shirts for Real People</p>
+            <div class="cart-info">
+                <span>Cart Items: <strong id="cart-count">0</strong></span>
+                <span>Total: $<strong id="cart-total">0.00</strong></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- PRODUCTS SECTION (What you're selling) -->
+    <section class="products">
+        <div class="container">
+            <h2>Our Collection</h2>
+            <div class="product-grid">
+                <!-- PRODUCT 1 -->
+                <div class="product-card">
+                    <div class="product-image">🎨</div>
+                    <h3>Classic Black Tee</h3>
+                    <p class="description">Comfortable, timeless black t-shirt. Perfect for everyday wear.</p>
+                    <div class="product-info">
+                        <p class="price">$19.99</p>
+                        <p class="stock">In Stock: 15</p>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Classic Black Tee', 19.99)">Add to Cart</button>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="product-card">
+                    <div class="product-image">🌊</div>
+                    <h3>Ocean Blue Vibes</h3>
+                    <p class="description">Cool blue tee with ocean-inspired design. Summer essential!</p>
+                    <div class="product-info">
+                        <p class="price">$22.99</p>
+                        <p class="stock">In Stock: 8</p>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Ocean Blue Vibes', 22.99)">Add to Cart</button>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="product-card">
+                    <div class="product-image">🔥</div>
+                    <h3>Red Hot Style</h3>
+                    <p class="description">Bold red tee that makes a statement. Turn heads everywhere.</p>
+                    <div class="product-info">
+                        <p class="price">$21.99</p>
+                        <p class="stock">In Stock: 12</p>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Red Hot Style', 21.99)">Add to Cart</button>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="product-card">
+                    <div class="product-image">🌿</div>
+                    <h3>Eco Green Organic</h3>
+                    <p class="description">100% organic cotton. Be trendy AND eco-friendly.</p>
+                    <div class="product-info">
+                        <p class="price">$25.99</p>
+                        <p class="stock">In Stock: 5</p>
+                    </div>
+                    <button class="btn-add" onclick="addToCart('Eco Green Organic', 25.99)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOPPING CART SECTION (What people are buying) -->
+    <section class="cart-section">
+        <div class="container">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <p class="empty-message">Your cart is empty. Add items above!</p>
+            </div>
+            <div class="cart-actions">
+                <button class="btn-clear" onclick="clearCart()">Clear Cart</button>
+                <button class="btn-checkout" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Bottom of page) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Fresh Threads T-Shirt Store. All rights reserved.</p>
+            <p>Free shipping on orders over $50!</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT (The brain that makes it work) -->
+    <script src="script.js"></script>
+</body>
+</html>
